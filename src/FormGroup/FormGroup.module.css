@@ -1,0 +1,39 @@
+.formGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.formLabel span {
+    color: var(--red);
+    font-size: 1rem;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background: white;
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    margin: 1rem 0;
+    outline: none;
+}
+
+.formInput::placeholder {
+    color: var(--gray2);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.formGroup p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 0.5rem 0 0.2rem;
+    color: var(--lightBlue);
+}

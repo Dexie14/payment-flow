@@ -1,0 +1,31 @@
+.layout{
+    background-image: url(../../Assets/Profile/background_image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-height: 750px;
+    
+}
+
+.pagewidth{
+    width: 40%;
+    margin: 0 auto;
+    padding: 5rem 0 ;
+}
+
+@media (max-width: 768px){
+    .pagewidth{
+        width: 60%;
+        margin: 0 auto;
+        padding: 5rem 0 ;
+    }
+}
+
+@media (max-width: 500px){
+    .pagewidth{
+        width: 80%;
+        margin: 0 auto;
+        padding: 5rem 0 ;
+    }
+}

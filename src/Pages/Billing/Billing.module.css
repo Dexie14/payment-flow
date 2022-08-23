@@ -1,0 +1,105 @@
+
+
+
+.profile h3{
+    color: var(--purple);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1.2rem;
+    color: var(--gray4);
+    width: 95%;
+}
+
+.nav h5:nth-of-type(2){
+    color: var(--orange);
+}
+.progress{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.image {
+    width: 100%;
+    margin: 0 auto;
+}
+.image img{
+    width: 100%;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grouptwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+.styledone{
+    width: 50%;
+}
+.styletwo{
+    width: 50%;
+}
+.stylethree{
+    width: 40%;
+}
+.style h5 {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.style .selected{
+    appearance: none;
+    background-image: url(../../Assets/Profile/drop\ down.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 3%;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    width: 100%;
+    outline-style: none;
+    border: 1px solid  var(--purple);
+    background-color: white;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+
+.buttonDiv{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 3rem 0 0;
+    justify-content: space-between;
+}
+
+.button{
+    font-family: 'Product Sans', sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 0.7rem;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+    color: var(--darkwhite);
+    border: none;
+}
+
+.buttonDiv h5{
+    color: var(--purple);
+    font-size: 0.7rem;
+    margin-left: 60px;
+}
+
+.buttonDiv a{
+    text-decoration: none;
+    width: 50%;
+}

@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import PaymentLayout from "./Layout/PaymentLayout/PaymentLayout.js";
+import Profile from "./Pages/Profile/Profile";
+import Billing from "./Pages/Billing/Billing";
+import Pay from "./Pages/Pay/Pay";
+import Completed from "./Pages/Completed/Completed";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <PaymentLayout>
+              <Profile />
+            </PaymentLayout>
+          }
+        />
+        <Route
+          path="/billing"
+          element={
+            <PaymentLayout>
+              <Billing />
+            </PaymentLayout>
+          }
+        />
+        <Route
+          path="/pay"
+          element={
+            <PaymentLayout>
+              <Pay />
+            </PaymentLayout>
+          }
+        />
+        <Route
+          path="/completed"
+          element={
+            <PaymentLayout>
+              <Completed />
+            </PaymentLayout>
+          }
+        />
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
